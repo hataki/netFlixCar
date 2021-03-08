@@ -15,21 +15,21 @@ eureka:
       defaultZone: http://eureka-7900:7900/eureka/,http://eureka-7901:7901/eureka/,http://eureka-7902:7902/eureka/
       #,
   server:
-    # ×ÔÎÒ±£»¤¿´×Ô¼ºÇé¿ö
+    # è‡ªæˆ‘ä¿æŠ¤çœ‹è‡ªå·±æƒ…å†µ
     enable-self-preservation: true
-    # ĞøÔ¼ãĞÖµ£¬ºÍ×ÔÎÒ±£»¤Ïà¹Ø
+    # ç»­çº¦é˜ˆå€¼ï¼Œå’Œè‡ªæˆ‘ä¿æŠ¤ç›¸å…³
     renewal-percent-threshold: 0.85
-    # serverÌŞ³ı¹ıÆÚ·şÎñµÄÊ±¼ä¼ä¸ô
+    # serverå‰”é™¤è¿‡æœŸæœåŠ¡çš„æ—¶é—´é—´éš”
     eviction-interval-timer-in-ms: 1000
-    # ÊÇ·ñ¿ªÆôreadOnly¶Á»º´æ
+    # æ˜¯å¦å¼€å¯readOnlyè¯»ç¼“å­˜
     use-read-only-response-cache: true
-    # ¹Ø±Õ readOnly
+    # å…³é—­ readOnly
     response-cache-update-interval-ms: 1000
 
 
 
-#µÈÍ¬ÓÚ application-dev.ymlÕâÖÖ·½Ê½£¬profilesÎª7900£¬ĞèÒªÔÚconfigurationÖĞÉèÖÃ
-#Æô¶¯µÄÊ±ºò£¬Ö±½ÓÆô¶¯¶ÔÓ¦µÄÏîÄ¿¼´¿É
+#ç­‰åŒäº application-dev.ymlè¿™ç§æ–¹å¼ï¼Œprofilesä¸º7900ï¼Œéœ€è¦åœ¨configurationä¸­è®¾ç½®
+#å¯åŠ¨çš„æ—¶å€™ï¼Œç›´æ¥å¯åŠ¨å¯¹åº”çš„é¡¹ç›®å³å¯
 ---
 spring:
   profiles: 7900
