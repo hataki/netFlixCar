@@ -15,6 +15,12 @@ import java.util.Random;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @EnableEurekaServer
+ * 其实是一个标识，
+ * import了一个EurekaServerMarkerConfiguration.class
+ * 里面有一个marker()方法，来
+ */
 @SpringBootApplication
 @EnableEurekaServer
 public class CloudEurekaApplication {
@@ -26,6 +32,8 @@ public class CloudEurekaApplication {
 
     /**
      * 模拟eureka的缓存
+     * LoadingCache是guava提供的一个缓存工具类
+     * 应用于多个核心代码源码中，比如线程池啊，内部的锁实现等等
      */
     LoadingCache<String, String > cache = CacheBuilder.newBuilder()
             .expireAfterWrite(5, TimeUnit.SECONDS)
