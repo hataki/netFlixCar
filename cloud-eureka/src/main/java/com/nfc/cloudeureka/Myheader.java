@@ -17,6 +17,8 @@ public class Myheader {
 
         /**
          * 非公平锁
+         * 对象锁
+         * 涉及到了锁升级状态
          *
          */
         t4.start();
